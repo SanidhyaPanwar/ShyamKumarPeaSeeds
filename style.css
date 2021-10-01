@@ -697,6 +697,10 @@ footer span .social a:nth-child(4):hover {
 	.skills .skills-content .left .text {
 		font-size: 19px;
 	}
+	.skills .skills-content .right img {
+		height: auto;
+		width: 300px;
+	}
 	.contact .right form .fields {
 		flex-direction: column;
 	}
