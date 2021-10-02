@@ -192,8 +192,9 @@ section .title::after {
 	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .home .home-content .text-3 {
-	font-size: 40px;
+	font-size: 60px;
 	margin: 5px 0;
+	color: red;
 	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .home .home-content .text-3 span {
@@ -234,12 +235,27 @@ section .title::after {
 	width: 55%;
 }
 .about .about-content .right .text {
-	font-size: 25px;
+	font-size: 35px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
-.about .about-content .right .text span {
-	color: rgb(0, 252, 134);
+
+.about .about-content .right b {
+	color: rgb(236, 30, 133);
+}
+
+.about .about-content .right .text b {
+	color: rgb(17, 88, 240);
+}
+
+.about .about-content .right {
+	font-size: 25px;
+}
+
+.about .about-content .right span {
+	color: green;
+	font-size: 27px;
+	font-weight: 600;
 }
 .about .about-content .right p {
 	text-align: justify;
@@ -302,8 +318,21 @@ section .title::after {
 .interests .serv-content .card:hover i {
 	color: #fff;
 }
-.interests .serv-content .card .text {
-	font-size: 25px;
+.interests .serv-content .card .text-4 {
+	font-size: 32px;
+	color: orangered;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
+.interests .serv-content .card .text-5 {
+	font-size: 32px;
+	color: rgb(17, 88, 240);
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
+.interests .serv-content .card .text-6 {
+	font-size: 32px;
+	color: crimson;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
@@ -391,7 +420,7 @@ section .title::after {
 .projects .carousel .card {
 	width: calc(33%);
 	display: inline-table;
-	height: 380px;
+	height: auto;
 	background: #222;
 	text-align: center;
 	border-radius: 6px;
