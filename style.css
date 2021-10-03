@@ -396,7 +396,7 @@ section .title::after {
 
 /* variety section styling */
 .variety .title::after {
-	content: "Our Offerings";
+	content: "Our Offerings*";
 }
 .variety .carousel .card {
 	width: calc(33%);
