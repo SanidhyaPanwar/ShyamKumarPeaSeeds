@@ -36,16 +36,16 @@ section {
 	margin: auto;
 }
 .about,
-.interests,
-.skills,
-.projects,
+.names,
+.brochure,
+.variety,
 .contact,
 footer {
 	font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.interests .serv-content,
-.skills .skills-content,
+.names .serv-content,
+.brochure .brochure-content,
 .contact .contact-content {
 	display: flex;
 	flex-wrap: wrap;
@@ -277,22 +277,22 @@ section .title::after {
 	background: none;
 }
 
-/* interests section styling */
-.interests,
-.projects {
+/* names section styling */
+.names,
+.variety {
 	color: #fff;
 	background: #111;
 }
-.interests .title::before,
-.projects .title::before {
+.names .title::before,
+.variety .title::before {
 	background: #fff;
 }
-.interests .title::after,
-.projects .title::after {
+.names .title::after,
+.variety .title::after {
 	background: #111;
 	content: "You Can Trust";
 }
-.interests .serv-content .card {
+.names .serv-content .card {
 	width: calc(33% - 10px);
 	background: #222;
 	text-align: center;
@@ -301,63 +301,69 @@ section .title::after {
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
-.interests .serv-content .card:hover {
+.names .serv-content .card:hover {
 	background: rgb(0, 252, 134);
 }
-.interests .serv-content .card .box {
+.names .serv-content .card .box {
 	transition: all 0.3s ease;
 }
-.interests .serv-content .card:hover .box {
+.names .serv-content .card:hover .box {
 	transform: scale(1.05);
 }
-.interests .serv-content .card i {
+.names .serv-content .card i {
 	font-size: 50px;
 	color: rgb(0, 252, 134);
 	transition: color 0.3s ease;
 }
-.interests .serv-content .card:hover i {
+.names .serv-content .card:hover i {
 	color: #fff;
 }
-.interests .serv-content .card .text-4 {
+.names .serv-content .card .text-4 {
 	font-size: 32px;
 	color: orangered;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
-.interests .serv-content .card .text-5 {
+.names .serv-content .card .text-5 {
 	font-size: 32px;
 	color: rgb(17, 88, 240);
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
-.interests .serv-content .card .text-6 {
+.names .serv-content .card .text-6 {
 	font-size: 32px;
 	color: crimson;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* brochure section styling */
 
-.skills .title::after {
+.brochure .title::after {
 	content: "Know More";
 }
-.skills .skills-content .column {
+.brochure .brochure-content .column {
 	width: calc(50% - 30px);
 }
-.skills .skills-content .left .text {
+.brochure .brochure-content .left .text {
 	font-size: 40px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
-.skills .skills-content .left p {
+.brochure .brochure-content .left p {
 	font-size: 27px;
 	margin-bottom: 10px;
-}
-.skills .skills-content .left p {
 	text-align: justify;
 }
-.skills .skills-content .left a {
+.brochure .brochure-content .left q {
+	font-size: 30px;
+	font-weight: 400;
+	color: blue;
+}
+.brochure .brochure-content .left cite {
+	font-size: 27px;
+}
+.brochure .brochure-content .left a {
 	display: inline-block;
 	background: rgb(0, 252, 134);
 	color: #fff;
@@ -369,59 +375,30 @@ section .title::after {
 	border: 2px solid rgb(0, 252, 134);
 	transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover {
+.brochure .brochure-content .left a:hover {
 	color: rgb(0, 252, 134);
 	background: none;
 }
-.skills .skills-content .right img {
+.brochure .brochure-content .right img {
 	height: auto;
 	width: 500px;
 }
-.skills .skills-content .right .info {
+.brochure .brochure-content .right .info {
 	display: flex;
 	margin-bottom: 5px;
 	align-items: center;
 	justify-content: space-between;
 }
-.skills .skills-content .right span {
+.brochure .brochure-content .right span {
 	font-weight: 500;
 	font-size: 18px;
 }
-.skills .skills-content .right .line {
-	height: 5px;
-	width: 100%;
-	background: lightgrey;
-	position: relative;
-}
-.skills .skills-content .right .line::before {
-	content: "";
-	position: absolute;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: rgb(0, 252, 134);
-}
-.skills-content .right .html::before {
-	width: 80%;
-}
-.skills-content .right .css::before {
-	width: 60%;
-}
-.skills-content .right .js::before {
-	width: 70%;
-}
-.skills-content .right .nodejs::before {
-	width: 65%;
-}
-.skills-content .right .mysql::before {
-	width: 70%;
-}
 
-/* projects section styling */
-.projects .title::after {
-	content: "My work";
+/* variety section styling */
+.variety .title::after {
+	content: "Our Offerings";
 }
-.projects .carousel .card {
+.variety .carousel .card {
 	width: calc(33%);
 	display: inline-table;
 	height: auto;
@@ -432,25 +409,32 @@ section .title::after {
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
-.projects .carousel .card:hover {
+.variety .carousel .card:hover {
 	background: rgb(0, 252, 134);
 }
-.projects .carousel .card .box {
+.variety .carousel .card:hover .text {
+	color: black;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
+.variety .carousel .card .box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	transition: all 0.3s ease;
 }
-.projects .carousel .card:hover .box {
+.variety .carousel .card:hover .box {
 	transform: scale(1.05);
 }
-.projects .carousel .card .text {
+.variety .carousel .card .text {
 	font-size: 25px;
 	font-weight: 500;
+	color: rgb(0, 252, 134);
 	margin: 10px 0 7px 0;
 }
-.projects .carousel .card img {
+.variety .carousel .card img {
 	height: 150px;
 	width: 150px;
 	object-fit: cover;
@@ -458,7 +442,7 @@ section .title::after {
 	border: 5px solid rgb(0, 252, 134);
 	transition: all 0.3s ease;
 }
-.projects .carousel .card:hover img {
+.variety .carousel .card:hover img {
 	border-color: #fff;
 }
 
@@ -498,66 +482,6 @@ section .title::after {
 .contact .contact-content .info .sub-title {
 	color: #333;
 }
-.contact .right form .fields {
-	display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field {
-	height: 45px;
-	width: 100%;
-	margin-bottom: 15px;
-}
-.contact .right form .textarea {
-	height: 80px;
-	width: 100%;
-}
-.contact .right form .name {
-	margin-right: 10px;
-}
-.contact .right form .email {
-	margin-left: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-	height: 100%;
-	width: 100%;
-	border: 1px solid lightgrey;
-	border-radius: 6px;
-	outline: none;
-	padding: 0 15px;
-	font-size: 17px;
-	font-family: 'Poppins', sans-serif;
-	transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-	border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea {
-	padding-top: 10px;
-	resize: none;
-}
-.contact .right form .button {
-	height: 47px;
-	width: 170px;
-}
-.contact .right form .button button {
-	width: 100%;
-	height: 100%;
-	border: 2px solid rgb(0, 252, 134);
-	background: rgb(0, 252, 134);
-	color: #fff;
-	outline: none;
-	font-size: 20px;
-	font-weight: 500;
-	border-radius: 6px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-}
-.contact .right form .button button:hover {
-	color: rgb(0, 252, 134);
-	background: none;
-}
 
 /* footer section styling */
 footer {
@@ -566,50 +490,9 @@ footer {
 	color: #fff;
 	text-align: center;
 }
-footer span a {
+footer span {
 	color: rgb(0, 252, 134);
-	text-decoration: none;
 }
-footer span a:hover {
-	text-decoration: none;
-}
-footer span .social a {
-	display: inline-block;
-	width: 46px;
-	height: 46px;
-	text-align: center;
-	padding-top: 0.3cm;
-	background: rgb(0, 252, 134);
-	color: #fff;
-	text-decoration: none;
-	border-radius: 50%;
-	transition: 0.5s;
-}
-footer span .social a .fa {
-	line-height: 46px;
-}
-
-footer span .social a:nth-child(1):hover {
-	color: #26a4f2;
-	box-shadow: 0 0 15px #1da1f2;
-	text-shadow: 0 0 15px #1da1f2;
-}
-footer span .social a:nth-child(2):hover {
-	color: #e23670;
-	box-shadow: 0 0 15px #e1306c;
-	text-shadow: 0 0 15px #e1306c;
-}
-footer span .social a:nth-child(3):hover {
-	color: #2a6cbb;
-	box-shadow: 0 0 15px #2867b2;
-	text-shadow: 0 0 15px #2867b2;
-}
-footer span .social a:nth-child(4):hover {
-	color: #fff;
-	box-shadow: 0 0 15px #fff;
-	text-shadow: 0 0 15px #fff;
-}
-
 /* responsive media query start */
 @media (max-width: 1300px) {
 	.home .max-width {
@@ -683,16 +566,16 @@ footer span .social a:nth-child(4):hover {
 	.about .about-content .right {
 		flex: 100%;
 	}
-	.interests .serv-content .card {
+	.names .serv-content .card {
 		width: calc(50% - 10px);
 		margin-bottom: 20px;
 	}
-	.skills .skills-content .column,
+	.brochure .brochure-content .column,
 	.contact .contact-content .column {
 		width: 100%;
 		margin-bottom: 35px;
 	}
-	.projects .carousel .card {
+	.variety .carousel .card {
 		width: calc(50% - 10px);
 		margin-bottom: 20px;
 	}
@@ -711,10 +594,10 @@ footer span .social a:nth-child(4):hover {
 	.home .home-content a {
 		font-size: 20px;
 	}
-	.interests .serv-content .card {
+	.names .serv-content .card {
 		width: 100%;
 	}
-	.projects .carousel .card {
+	.variety .carousel .card {
 		width: 100%;
 	}
 }
@@ -727,10 +610,10 @@ footer span .social a:nth-child(4):hover {
 		font-size: 27px;
 	}
 	.about .about-content .right .text,
-	.skills .skills-content .left .text {
+	.brochure .brochure-content .left .text {
 		font-size: 19px;
 	}
-	.skills .skills-content .right img {
+	.brochure .brochure-content .right img {
 		height: auto;
 		width: 300px;
 	}
