@@ -168,100 +168,42 @@ section .title::after {
 	filter: brightness(90%);
 }
 
-/* home section styling */
-.home {
-	display: flex;
-	background: url("images/bg3.jpg") no-repeat center;
-	height: 100vh;
-	color: #fff;
-	min-height: 500px;
-	background-size: cover;
-	background-attachment: fixed;
-	font-family: 'Ubuntu', sans-serif;
-}
-.home .max-width {
-	margin: auto 0 auto 30px;
-}
-.home .home-content .text-1 {
-	font-size: 27px;
-	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.home .home-content .text-2 {
-	font-size: 75px;
-	font-weight: 600;
-	margin-left: -3px;
-	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.home .home-content .text-3 {
-	font-size: 60px;
-	margin: 5px 0;
-	color: red;
-	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.home .home-content .text-3 span {
-	color: rgb(0, 252, 134);
-	font-weight: 500;
-}
-.home .home-content a {
-	display: inline-block;
-	background: rgb(0, 252, 134);
-	color: #fff;
-	font-size: 25px;
-	padding: 12px 36px;
-	margin-top: 20px;
-	font-weight: 400;
-	border-radius: 6px;
-	border: 2px solid rgb(0, 252, 134);
-	transition: all 0.3s ease;
-}
-.home .home-content a:hover {
-	color: rgb(0, 252, 134);
-	background: none;
-}
-
 /* about section styling */
+
 .about .title::after {
 	content: "Know me better";
 }
-.about .about-content .left {
-	width: 45%;
+.about .about-content {
+	max-width: 650px;
+	margin: auto;
 }
-.about .about-content .left img {
-	width: 330px;
-	box-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	object-fit: cover;
-	border-radius: 6px;
-}
-.about .about-content .right {
-	width: 55%;
-}
-.about .about-content .right .text {
+.about .about-content .text {
 	font-size: 35px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
-.about .about-content .right b {
+.about .about-content cite b {
 	color: rgb(236, 30, 133);
 }
 
-.about .about-content .right .text b {
+.about .about-content .text b {
 	color: rgb(17, 88, 240);
 }
 
-.about .about-content .right {
+.about .about-content {
 	font-size: 25px;
 }
 
-.about .about-content .right span {
+.about .about-content span {
 	color: green;
 	font-size: 27px;
 	font-weight: 600;
 }
-.about .about-content .right p {
+.about .about-content p {
 	text-align: justify;
 }
-.about .about-content .right a {
+.about .about-content a {
 	display: inline-block;
 	background: rgb(0, 252, 134);
 	color: #fff;
@@ -273,7 +215,7 @@ section .title::after {
 	border: 2px solid rgb(0, 252, 134);
 	transition: all 0.3s ease;
 }
-.about .about-content .right a:hover {
+.about .about-content a:hover {
 	color: rgb(0, 252, 134);
 	background: none;
 }
