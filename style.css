@@ -346,8 +346,12 @@ section .title::after {
 	width: calc(50% - 30px);
 }
 .skills .skills-content .left .text {
-	font-size: 20px;
+	font-size: 40px;
 	font-weight: 600;
+	margin-bottom: 10px;
+}
+.skills .skills-content .left p {
+	font-size: 27px;
 	margin-bottom: 10px;
 }
 .skills .skills-content .left p {
